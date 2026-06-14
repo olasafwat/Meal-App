@@ -3,7 +3,7 @@ import 'package:meal_app/contants.dart';
 import 'package:meal_app/model/category_model.dart';
 import 'package:meal_app/model/meal_model.dart';
 import 'package:meal_app/screens/meal_screen.dart';
-import 'package:meal_app/widgets/customText.dart';
+import 'package:meal_app/widgets/custom_text.dart';
 
 class CategoryItem extends StatelessWidget {
   CategoryModel categoryModel;
@@ -61,9 +61,9 @@ class CategoryItem extends StatelessWidget {
                     children: [
                       //vertical line
                       Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 15),
+                        padding: const EdgeInsets.only(left: 18,right: 10),
                         child: Container(
-                          margin: EdgeInsets.only(bottom: 10),
+                          margin: EdgeInsets.only(bottom: 15),
                           width: 2,
                           height: 20,
                           decoration: BoxDecoration(

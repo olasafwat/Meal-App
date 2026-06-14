@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meal_app/contants.dart';
 import 'package:meal_app/widgets/category_item.dart';
 import '../data.dart';
-import '../widgets/customText.dart';
+import '../widgets/custom_text.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

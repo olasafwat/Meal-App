@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../contants.dart';
-import 'customText.dart';
+import 'custom_text.dart';
 
 class CustomRow extends StatelessWidget {
   final Color colorCircleAvatar;

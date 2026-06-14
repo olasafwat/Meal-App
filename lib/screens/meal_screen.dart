@@ -3,7 +3,7 @@ import 'package:meal_app/contants.dart';
 import 'package:meal_app/data.dart';
 import 'package:meal_app/model/category_model.dart';
 import 'package:meal_app/model/meal_model.dart';
-import 'package:meal_app/widgets/customText.dart';
+import 'package:meal_app/widgets/custom_text.dart';
 
 import '../widgets/meal_item.dart';
 

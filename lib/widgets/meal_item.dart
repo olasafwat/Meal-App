@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:meal_app/contants.dart';
 import 'package:meal_app/model/meal_model.dart';
 
-import 'customText.dart';
+import 'custom_text.dart';
 import 'custom_row.dart';
 
 class MealItem extends StatelessWidget {
