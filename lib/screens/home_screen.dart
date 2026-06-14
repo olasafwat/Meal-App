@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
           fontSize: fontSize25,
         ),
         centerTitle: true,
-        backgroundColor: blueGreyColor,
+        backgroundColor: blueNavyColor,
       ),
       body: ListView.builder(
         itemBuilder: (BuildContext context, int index) {

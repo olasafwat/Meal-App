@@ -1,11 +1,17 @@
 import 'package:flutter/material.dart';
 
-Color blueGreyColor = Colors.blueGrey;
+Color blueNavyColor = Color(0xff00001e);
 Color whiteColor = Colors.white;
 Color blackColor = Colors.black;
 Color greenColor = Colors.green;
 Color greyColor = Colors.grey;
 Color orangeColor = Colors.orange;
+Color redColor = Colors.red;
+Gradient blueNavyGradientColor = LinearGradient(
+  colors: [Color(0xFF161B24), Color(0xFF0F1D3A)],
+);
+Color goldColor = Color(0xFFB88A3B);
+Color darkRedColor = Colors.red.shade900;
 
 FontWeight fontWeightBold = FontWeight.bold;
 

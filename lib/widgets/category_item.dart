@@ -38,17 +38,74 @@ class CategoryItem extends StatelessWidget {
                 image: AssetImage(categoryModel.image),
               ),
             ),
-            //category name
+            //category name , line , arrow
             child: Container(
-              alignment: Alignment.bottomCenter,
-              color: blueGreyColor,
+              alignment: Alignment.centerLeft,
               width: double.infinity,
-              height: 35,
-              child: CustomText(
-                title: categoryModel.name,
-                color: whiteColor,
-                fontWeight: fontWeightBold,
-                fontSize: fontSize25,
+              height: 60,
+              decoration: BoxDecoration(
+                gradient: blueNavyGradientColor,
+                border: Border.symmetric(
+                  horizontal: BorderSide(
+                    color: goldColor,
+                    width: 0.5,
+                  ),
+                ),
+
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  //vertical line , category name, hint
+                  Row(
+                    children: [
+                      //vertical line
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 15),
+                        child: Container(
+                          margin: EdgeInsets.only(bottom: 10),
+                          width: 2,
+                          height: 20,
+                          decoration: BoxDecoration(
+                            color: darkRedColor,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                        ),
+                      ),
+                      //category name, hint
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          //category name
+                          CustomText(
+                            title: categoryModel.name,
+                            color: whiteColor,
+                            fontWeight: fontWeightBold,
+                            fontSize: fontSize20,
+                          ),
+                          //hint
+                          CustomText(
+                            title: "Delicious ${categoryModel.name} Cuisine",
+                            color: greyColor,
+                            fontWeight: fontWeightBold,
+                            fontSize: fontSize12,
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
+
+                  //arrow icon
+                  Padding(
+                    padding: const EdgeInsets.only(right: 10),
+                    child: CircleAvatar(
+                      backgroundColor: darkRedColor,
+                      radius: 18,
+                      child: Icon(Icons.arrow_forward,size: 20,color: whiteColor,),
+                    ),
+                  )
+                ],
               ),
             ),
           ),

@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import '../contants.dart';
 import 'customText.dart';
 
-class RowCustom extends StatelessWidget {
+class CustomRow extends StatelessWidget {
   final Color colorCircleAvatar;
   final IconData icon;
   final String numText;
   final String text;
-  const RowCustom({
+  const CustomRow({
     super.key,
     required this.colorCircleAvatar,
     required this.icon,

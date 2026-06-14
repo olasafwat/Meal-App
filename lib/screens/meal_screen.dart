@@ -9,17 +9,22 @@ import '../widgets/meal_item.dart';
 
 class MealScreen extends StatelessWidget {
   CategoryModel categoryModel;
+
   MealScreen({super.key, required this.categoryModel});
+
+  List<MealModel> mealByIdList = [];
 
   @override
   Widget build(BuildContext context) {
-    List<MealModel> mealByIdList = mealList
-        .where((meal) => meal.categoryNumber == categoryModel.id)
-        .toList();
+    for (MealModel mealModel in mealList) {
+      if (mealModel.categoryNumber == categoryModel.id) {
+        mealByIdList.add(mealModel);
+      }
+    }
     return Scaffold(
       appBar: AppBar(
         iconTheme: IconThemeData(color: whiteColor),
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: blueNavyColor,
         title: Text(
           categoryModel.name,
           style: TextStyle(

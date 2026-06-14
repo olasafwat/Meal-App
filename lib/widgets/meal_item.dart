@@ -3,7 +3,7 @@ import 'package:meal_app/contants.dart';
 import 'package:meal_app/model/meal_model.dart';
 
 import 'customText.dart';
-import 'rowCustom.dart';
+import 'custom_row.dart';
 
 class MealItem extends StatelessWidget {
   MealModel mealModel;
@@ -65,7 +65,7 @@ class MealItem extends StatelessWidget {
 
                     children: [
                       //price
-                      RowCustom(
+                      CustomRow(
                         colorCircleAvatar: greenColor,
                         icon: Icons.attach_money,
                         numText: mealModel.price,
@@ -83,7 +83,7 @@ class MealItem extends StatelessWidget {
                       ),
 
                       //cooking time
-                      RowCustom(
+                      CustomRow(
                         colorCircleAvatar: orangeColor,
                         icon: Icons.access_time,
                         numText: "${mealModel.time} min",
